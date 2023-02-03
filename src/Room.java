@@ -14,7 +14,8 @@ public class Room {
         inventory = new HashMap<>();
     }
 
-    //THIS IS THE CODE FOR ROOMS/EXIT STUFF
+    //THIS IS
+    // THE CODE FOR ROOMS/EXIT STUFF
     private String getExitString(){
         String returnString = "Exits: ";
         Set<String> keys = exits.keySet();

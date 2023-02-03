@@ -56,7 +56,6 @@ public class Game {
         Item treeBranch = new Item();
         Item magicMagma = new Item();
 
-
         ocean.setItem("iron", iron);
         pier.setItem("waterPot", waterPot);
         pier.setItem("dirtyWater", dirtyWater);
@@ -120,6 +119,7 @@ public class Game {
         return wantToQuit;
     }
 
+
     private void drink(Command command){
         if(!command.hasSecondWord()){
             System.out.println("Drink what?");
@@ -150,8 +150,8 @@ public class Game {
             return;
         }
         String victim = command.getSecondWord();
-        //ATTACK WONT WORK ASK ADAMS
-        if(victim.equals("jaguar") && player.getInventoryMap().containsKey("sword")){
+        if(victim.equals(
+                "jaguar") && player.getInventoryMap().containsKey("sword")){
             System.out.println("You attack the jaguar with all of your might, and you successfully slay the jaguar. You are free to go to the sanctuary.");
             defeatedAnimal = true;
         }else if(victim.equals("jaguar") && !player.getInventoryMap().containsKey("sword")){
